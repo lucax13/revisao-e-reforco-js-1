@@ -13,5 +13,9 @@ export const formatarMoeda = (valor, moeda = 'BRL', localidade = 'pt-BR' ) => {
         }
     )
 };
+/*usamos o rest operador para obter uma lista de parametros, não importando a quandidade */
+export function classificar(...texto){
+    return texto.sort();
+}
 
 // export { converterMaiuscula, converterMinuscula, formatarMoeda }
