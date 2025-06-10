@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usando modulos js no html</title>
+</head>
+<body>
+    <h1>Acessando módulos</h1>
+    <hr>
+    <ul id="lista-alunos"></ul>
+
+    <li></li>
+    
+
+    <script type="module">
+        import { alunos } from "./modulos-esm/dados.js";
+
+        console.log(alunos);
+
+        const listaAlunos = document.getElementByid("lista-alunos");
+
+        for (const aluno of alunos){
+
+            console.log
+        }
+
+    </script>
+</body>
+</html>
