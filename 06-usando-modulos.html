@@ -10,7 +10,7 @@
     <hr>
     <ul id="lista-alunos"></ul>
 
-    <li></li>
+    
     
 
     <script type="module">
@@ -18,11 +18,14 @@
 
         console.log(alunos);
 
-        const listaAlunos = document.getElementByid("lista-alunos");
+        const lista = document.querySelector("#lista-alunos");
 
         for (const aluno of alunos){
+            let item = document.createElement("li");
 
-            console.log
+            item.innerHTML = aluno;
+
+            lista.appendChild(item);
         }
 
     </script>
