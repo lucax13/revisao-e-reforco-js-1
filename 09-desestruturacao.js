@@ -139,8 +139,8 @@ const {
   idade: idadeDoPaciente,
   sintomas,
   mensalidade,
-  contatos = { email, telefone },
-  endereco = { localidade, numero, bairro },
+  contatos: [email, telefone],
+  endereco: { localidade, numero, bairro },
   atendimento,
 } = paciente;
 
@@ -148,6 +148,8 @@ console.log(nomeDoPaciente);
 console.log(idadeDoPaciente);
 console.log(sintomas);
 console.log(mensalidade);
-console.log(contatos);
-console.log(endereco);
+console.log(email);
+console.log(telefone);
+console.log(localidade);
+console.log(numero);
 console.log(atendimento());
