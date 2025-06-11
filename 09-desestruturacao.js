@@ -67,3 +67,38 @@ console.log(monitor);
 console.log(mouse);
 console.log(numero);
 console.log(funcao("lucas"));
+
+separador();
+
+const guloseimas = [
+  "brigadeiro",
+  "brownie",
+  "torta de limão",
+  "coxinha",
+  "pastel",
+  "pizza",
+  "esfiha",
+];
+
+const [brigadeiro, brownie, torta, ...salgados] = guloseimas;
+console.log(salgados);
+console.log(brigadeiro);
+
+separador();
+
+const musico = {
+  nome: "bon jovi",
+  instrumento: "Guitarra",
+  idade: 55,
+  banda: "Pink floyd",
+};
+
+//console.log(musico.nome);
+//console.log(musico.idade);
+
+// com desestruturação
+const { nome, instrumento, idade, banda } = musico;
+console.log(nome);
+console.log(instrumento);
+console.log(idade);
+console.log(banda);
