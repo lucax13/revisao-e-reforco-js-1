@@ -113,5 +113,7 @@ const aluno = {
 
 // desetruturação com alias/apelido em propriedade
 const { nome: nomeDoAluno, cidade, estado } = aluno;
+
+console.log(nomeDoAluno);
 console.log(cidade);
 console.log(estado);
