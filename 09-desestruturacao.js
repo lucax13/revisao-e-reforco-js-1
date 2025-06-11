@@ -60,12 +60,12 @@ const diversos = [
   (texto) => texto.toUpperCase(),
 ];
 
-const [javaScript, [teclado, monitor, mouse], numero, funcao] = diversos;
+const [javaScript, [teclado, monitor, mouse], valor, funcao] = diversos;
 console.log(javaScript);
 console.log(teclado);
 console.log(monitor);
 console.log(mouse);
-console.log(numero);
+console.log(valor);
 console.log(funcao("lucas"));
 
 separador();
@@ -133,3 +133,21 @@ const paciente = {
   },
   atendimento: () => (paciente.idade >= 60 ? "prioritario" : "normal"),
 };
+
+const {
+  nome: nomeDoPaciente,
+  idade: idadeDoPaciente,
+  sintomas,
+  mensalidade,
+  contatos = { email, telefone },
+  endereco = { localidade, numero, bairro },
+  atendimento,
+} = paciente;
+
+console.log(nomeDoPaciente);
+console.log(idadeDoPaciente);
+console.log(sintomas);
+console.log(mensalidade);
+console.log(contatos);
+console.log(endereco);
+console.log(atendimento());
