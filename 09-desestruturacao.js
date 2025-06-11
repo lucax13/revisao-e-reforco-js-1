@@ -117,3 +117,19 @@ const { nome: nomeDoAluno, cidade, estado } = aluno;
 console.log(nomeDoAluno);
 console.log(cidade);
 console.log(estado);
+
+separador();
+
+const paciente = {
+  nome: "Gabriel Viana",
+  idade: 19,
+  contatos: ["gabriel@gmail.com", "11-99888-2299"],
+  sintomas: "sonolencia permanente, coriza, tosse, bronquite..",
+  mensalidade: 568.74,
+  endereco: {
+    localidade: "Rua francisco Coimbra",
+    numero: "403",
+    bairro: "Penha",
+  },
+  atendimento: () => (paciente.idade >= 60 ? "prioritario" : "normal"),
+};
