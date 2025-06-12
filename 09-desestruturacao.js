@@ -156,10 +156,34 @@ console.log(atendimento());
 
 separador();
 
-function processarPedido(dadosPedido) {
-  console.log("Produto: " + dadosPedido[0]);
-  console.log("Preço: " + dadosPedido[1]);
+function processarPedido([produto, preco, marca = "não informado"]) {
+  console.log("Produto: " + produto);
+  console.log("Preço: " + preco);
+  console.log("Marca: " + marca);
 }
 
-const pedido = ["Tv", 1500];
-processarPedido(pedido);
+const pedidoA = ["Tv", 1500, "Sony"];
+processarPedido(pedidoA);
+
+const pedidoB = ["iphone 15", 5000];
+processarPedido(pedidoB);
+
+separador();
+
+const exibirDados = (filme) => {
+  console.log(`filme: ${filme.titulo} - Ano: ${filme.ano} \n
+    `);
+};
+
+const filme1 = {
+  titulo: "o hobbit",
+  ano: 2012,
+};
+
+const filme2 = {
+  titulo: "o senhor dos aneis",
+  ano: 2001,
+};
+
+exibirDados(filme1);
+exibirDados(filme2);
