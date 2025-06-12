@@ -153,3 +153,13 @@ console.log(telefone);
 console.log(localidade);
 console.log(numero);
 console.log(atendimento());
+
+separador();
+
+function processarPedido(dadosPedido) {
+  console.log("Produto: " + dadosPedido[0]);
+  console.log("Preço: " + dadosPedido[1]);
+}
+
+const pedido = ["Tv", 1500];
+processarPedido(pedido);
