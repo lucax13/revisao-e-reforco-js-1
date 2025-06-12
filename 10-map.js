@@ -32,3 +32,21 @@ separador();
 //exemplo 2: gerar um novo array contendo somente os titulos dos cursos
 const titulos = cursos.map((curso) => curso.titulo);
 console.log(titulos);
+
+separador();
+
+const precos = cursos.map((curso) => curso.preco - curso.preco * 0.1);
+console.log(precos);
+
+separador();
+
+// exemplos 3: gerar array Completo mas com os precos atualizaos com o desconto
+
+const cursosCOMDesconto = cursos.map((curso) => {
+  return {
+    ...curso,
+    preco: curso.preco - curso.preco * 0.1,
+  };
+});
+
+console.log(cursosCOMDesconto);
