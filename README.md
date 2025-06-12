@@ -34,3 +34,9 @@ O operador Rest no JavaScript é como uma "cesta de coleta": ele agrupa múltipl
 ## Operador Spread (...)
 
 Já o operador Spread age de forma oposta, como um "espalhador": ele expande os elementos de um iterável (como um array ou objeto) em locais onde múltiplos argumentos ou elementos são esperados. É ideal para combinar arrays, copiar objetos, ou passar os elementos de um array como argumentos individuais para uma função, tornando o código mais conciso e fácil de ler.
+
+---
+
+## sobre desestruturação
+
+Desestruturação em JavaScript serve para extrair valores de arrays ou propriedades de objetos de forma mais prática e direta. Com ela, é possível atribuir variáveis rapidamente, tornando o código mais limpo e legível. Por exemplo, const { nome, idade } = pessoa; extrai as propriedades nome e idade do objeto pessoa. Também funciona com arrays: const [a, b] = [1, 2];.
