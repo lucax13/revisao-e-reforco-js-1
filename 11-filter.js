@@ -29,3 +29,32 @@ const servicoPendente = servcos.filter((servico) => {
   return servico.status == "pendente";
 });
 console.log(servicoPendente);
+
+separador();
+
+// Exemplo 3
+const cursoDesing = cursos.filter((curso) => {
+  return curso.categoria === "Desing";
+});
+
+console.log(cursoDesing);
+
+separador();
+
+//Exemplo 4
+const cursosExetoDesing = cursos.filter(
+  (curso) => curso.categoria !== "Desing"
+);
+
+console.log(cursosExetoDesing);
+
+separador();
+
+//exercicio
+const cursoFullstack = cursos.filter((cursos) => {
+  return cursos.preco >= 600;
+});
+
+console.log(cursoFullstack);
+
+separador();
