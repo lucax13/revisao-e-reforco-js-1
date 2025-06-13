@@ -53,11 +53,17 @@ console.log(cursosCOMDesconto);
 
 separador();
 
-const cursoCategoria = cursos.map((curso) => {
-  return {
-    titulo: curso.titulo,
-    categoria: curso.categoria,
-  };
-});
+// versão 1
+//const cursoCategoria = cursos.map((curso) => {
+//return {
+//titulo: curso.titulo,
+//categoria: curso.categoria,
+//};
+//});
+
+const cursoCategoria = cursos.map((curso) => ({
+  titulo: curso.titulo,
+  categoria: curso.categoria,
+}));
 
 console.log(cursoCategoria);
