@@ -61,9 +61,18 @@ separador();
 //};
 //});
 
-const cursoCategoria = cursos.map((curso) => ({
-  titulo: curso.titulo,
-  categoria: curso.categoria,
-}));
+// versão 2 com retorno implicito
+//const cursoCategoria = cursos.map((curso) => ({
+//titulo: curso.titulo,
+//categoria: curso.categoria,
+//}));
 
+//versão 3 usando desestruturação de parametros
+/*note que podemos ate deixar apenas o nome dos parametros como propriedades
+do objeto retornado. ou seja, em vez de usar titulo: tilos, podemos
+deixar somente titulo. em vez de usar categoria, basta categoria.*/
+const cursoCategoria = cursos.map(({ titulo, categoria }) => ({
+  titulo,
+  categoria,
+}));
 console.log(cursoCategoria);
