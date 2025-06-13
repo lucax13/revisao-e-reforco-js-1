@@ -10,8 +10,6 @@ visando reornar valores de acordo com uma ou mais condições, gerando um novo a
 const vendas = [1500, 200, 905, 3000, 780, 9000];
 const META = 1000;
 
-const vendasQueBateramMeta = vendas.filter((venda) => {
-  return venda >= META;
-});
+const vendasQueBateramMeta = vendas.filter((venda) => venda >= META);
 
 console.log(vendasQueBateramMeta);
