@@ -33,28 +33,50 @@ console.log(servicoPendente);
 separador();
 
 // Exemplo 3
-const cursoDesing = cursos.filter((curso) => {
-  return curso.categoria === "Desing";
+console.log("ex3");
+
+const cursoDesign = cursos.filter((curso) => {
+  return curso.categoria === "Design";
 });
 
-console.log(cursoDesing);
+console.log(cursoDesign);
 
 separador();
 
 //Exemplo 4
-const cursosExetoDesing = cursos.filter(
-  (curso) => curso.categoria !== "Desing"
+console.log("ex4");
+
+const cursosExetoDesign = cursos.filter(
+  (curso) => curso.categoria !== "Design"
 );
 
-console.log(cursosExetoDesing);
+console.log(cursosExetoDesign);
 
 separador();
 
-//exercicio
-const cursoFullstack = cursos.filter((cursos) => {
-  return cursos.preco >= 600;
+//exercicios
+console.log("ex1");
+const cursoFullstack = cursos.filter((curso) => {
+  return (
+    curso.categoria === "Front-End" ||
+    (curso.categoria === "Mobile" && curso.preco > 600)
+  );
 });
 
 console.log(cursoFullstack);
 
 separador();
+
+console.log("ex2");
+const cursosDesconto = cursos
+  .filter((curso) => {
+    return curso.categoria === "Back-End";
+  })
+  .map((curso) => {
+    return {
+      ...curso,
+      preco: curso.preco - curso.preco * 0.1,
+    };
+  });
+
+console.log(cursosDesconto);
