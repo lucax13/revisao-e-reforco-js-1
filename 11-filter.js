@@ -80,3 +80,22 @@ const cursosDesconto = cursos
   });
 
 console.log(cursosDesconto);
+
+// const desafio = cursos
+// .filter(({categoria}) => categoria === "Back-end").map((curso) => ({
+//   ...curso
+//   preco: preco.
+
+// }))
+
+//map((curso) => curso.preco - curso.preco * 0.1);
+//cursos.map(curso)
+
+console.log(cursosPorCategoriaComDesconto);
+
+// const cursosComDesconto = cursos.map((curso) => {
+//   return {
+//     ...curso, //spread das propriedades do curso(copianod -as para cá)
+//     preco: curso.preco - curso.preco * 0.1, // mas o preco é atualzado
+//   };
+// });
